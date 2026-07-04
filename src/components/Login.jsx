@@ -28,7 +28,7 @@ export default function Login({ onLogin }) {
   return (
     <div className="login-screen">
       <div className="login-card">
-        <div className="logo">SKYNET CAFFEINE FREE</div>
+        <div className="logo">SKYNET<br />CAFFEINE FREE</div>
         <div className="logo-tag">OS v2.0 · RESTRICTED ACCESS</div>
         <form onSubmit={handleSubmit} className="login-form">
           <input
