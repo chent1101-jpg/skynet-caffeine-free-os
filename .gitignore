@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment — never commit actual secrets
+.env
+.env.local
+.env.*.local
+
+# Vite temp files
+vite.config.js.timestamp-*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

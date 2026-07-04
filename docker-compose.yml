@@ -1,0 +1,21 @@
+services:
+  hermes-os:
+    build: .
+    container_name: hermes-os
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    networks:
+      - traefik_default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hermes-os.rule=Host(`${HERMES_DOMAIN}`)"
+      - "traefik.http.routers.hermes-os.entrypoints=websecure"
+      - "traefik.http.routers.hermes-os.tls.certresolver=letsencrypt"
+      - "traefik.http.services.hermes-os.loadbalancer.server.port=3000"
+
+networks:
+  traefik_default:
+    external: true
