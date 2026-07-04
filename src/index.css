@@ -43,9 +43,9 @@ body {
 
 .login-card .logo {
   font-family: 'SF Mono', 'Courier New', monospace;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 700;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
   color: #00c8ff;
   text-shadow: 0 0 24px rgba(0,200,255,0.6), 0 0 48px rgba(0,200,255,0.2);
   margin-bottom: 4px;
